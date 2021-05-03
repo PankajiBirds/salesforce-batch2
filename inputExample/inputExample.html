@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Input Example" icon-name="custom:custom11">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" value="Amit" label="Enter Username" onchange={handleUsername}></lightning-input>
+            <lightning-input type="number" value="7891089874" label="Enter Contact Number" onchange={handleContact}></lightning-input>        
+            <lightning-input type="email" value="" label="Enter Email" class="email"></lightning-input>
+            <div class="slds-m-top_x-small" style="float:right">
+                <lightning-button label="Click Me" variant="brand" onclick={handleClickMe}></lightning-button>
+            </div>
+        </div>
+        <div class="slds-m-around_medium">
+            <div>
+                <span class="p1">Username : </span> 
+                <span>{username}</span>
+            </div>
+            <div>
+                <span class="p2">Contact Number : </span>
+                <span>{contact}</span>
+            </div>
+            <div>
+                <span class="p3">Email : </span>
+                <span>{email}</span>
+            </div>
+        </div>
+    </lightning-card>
+</template>

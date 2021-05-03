@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Text Format Attribute" icon-name="custom:custom21">
+        <div class="slds-m-around_medium">
+            <div>
+                Employee Name : <lightning-formatted-text value={employeeDetail.name}></lightning-formatted-text>                
+            </div>
+            <div>
+                Contact : <lightning-formatted-phone value={employeeDetail.contact}></lightning-formatted-phone>
+            </div>
+            <div>
+                Email : <lightning-formatted-email value={employeeDetail.email}></lightning-formatted-email>
+            </div>
+            <div>
+                Address : <lightning-formatted-rich-text value={employeeDetail.address}></lightning-formatted-rich-text>
+            </div>
+        </div>
+    </lightning-card>
+</template>
