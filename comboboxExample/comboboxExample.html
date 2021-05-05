@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Combobox Example" icon-name="custom:custom15">
+        <div class="slds-m-around_medium">
+            <lightning-combobox 
+                label="Select State" 
+                options={states} 
+                value={selectedState} 
+                onchange={handleStateChange}></lightning-combobox>
+
+            <span>Selected State : </span><lightning-formatted-text value={selectedState}></lightning-formatted-text>
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+                label="Select City"
+                options={cities}
+                value={selectedCity}
+                onchange={handleCityChange}
+            >
+            </lightning-combobox>
+            <span>Selected City : </span><lightning-formatted-text value={selectedCity}></lightning-formatted-text>
+        </div>
+    </lightning-card>
+</template>

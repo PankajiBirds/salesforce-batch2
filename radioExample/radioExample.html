@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Radio Example" icon-name="custom:custom34">
+        <div class="slds-m-around_medium">
+            <lightning-radio-group
+                label="Select Gender"
+                options={gender}
+                value={selectedGender}
+                onchange={handleGender}
+            >
+            </lightning-radio-group>
+            <div>Selected Gender : {selectedGender}</div>
+        </div>
+    </lightning-card>
+</template>
