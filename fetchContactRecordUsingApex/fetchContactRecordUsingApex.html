@@ -1,0 +1,76 @@
+<template>
+    <lightning-card title="Contact List Example" icon-name="custom:custom54">
+        <div class="slds-m-around_medium">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                <thead>
+                    <tr>
+                        <th>Contact Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Fax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={dataList} for:item="data">
+                        <tr key={data}>
+                            <td>{data.Name}</td>
+                            <td>{data.Email}</td>
+                            <td>{data.Phone}</td>
+                            <td>{data.Fax}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <hr/>
+        <div class="slds-m-around_medium">
+            <h2>Opportunity List</h2>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                <thead>
+                    <tr>
+                        <th>Opportunity Name</th>
+                        <th>Close Date</th>
+                        <th>Amount</th>
+                        <th>Stage Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={opportunitys.data} for:item="opp">
+                        <tr key={opp}>
+                            <td>{opp.Name}</td>
+                            <td>{opp.CloseDate}</td>
+                            <td>{opp.Amount}</td>
+                            <td>{opp.StageName}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <hr/>
+        <div class="slds-m-around_medium">
+            <h2>Account List</h2>
+            <br/>
+            <lightning-button label="Get Accounts" variant="brand" onclick={handleAccounts}></lightning-button>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Account Number</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={allAccountData} for:item="account">
+                        <tr key={account}>
+                            <td>{account.Name}</td>
+                            <td>{account.AccountNumber}</td>
+                            <td>{account.Phone}</td>
+                            <td>{account.Email__c}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>        
+    </lightning-card>
+</template>
