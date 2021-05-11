@@ -1,0 +1,55 @@
+<template>
+    <lightning-card title="Navigation Example" icon-name="custom:custom67">
+        <div class="slds-m-around_medium">
+            <h2>Standard Name</h2>
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="Go to Home Page" variant="brand" onclick={handleHomePageClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item>
+                    <lightning-button label="Go to Chatter Page" variant="brand" onclick={handleChatterClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <br/>
+            <h2>Move To Object</h2>            
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="Contact List" variant="brand" onclick={handleContactListClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="New Contact" variant="brand" onclick={handleNewContactClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="New Contact With Default" variant="brand" onclick={handleNewContactWithDefaultClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="Contact Detail Page" variant="brand" onclick={handleContactDetailClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="Student Edit Page" variant="brand" onclick={handleContactEditClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <br/>
+            <h2>Web Page</h2>            
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="ibirdsservices.com" variant="brand" onclick={handleWebpageClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <br/>
+            <h2>Move to Tab</h2>            
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item class="slds-m-right_medium">
+                    <lightning-button label="Go to Country Example" variant="brand" onclick={handletabItemClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
