@@ -1,0 +1,20 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item>
+            <lightning-button label="Click Me" variant="brand" onclick={handleClickMe}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-m-left_large">
+            <lightning-button label="Remove" variant="destructive" onclick={handleRemove}></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    <hr/>
+    <div>
+        <lightning-input type="text" label="Enter Username" class="forInput"></lightning-input>
+        <lightning-input type="password" label="Enter Password" class="forInput"></lightning-input>
+        <lightning-input type="email" label="Enter Email" class="forInput"></lightning-input>
+        <lightning-input type="number" label="Enter Pincode" class="forInput"></lightning-input>
+    </div>
+    <div class="slds-m-top_large">
+        <lightning-button label="Send to Parent" variant="success" onclick={handleSendToParent}></lightning-button>
+    </div>
+</template>

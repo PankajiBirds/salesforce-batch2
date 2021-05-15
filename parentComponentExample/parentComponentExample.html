@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Child to Parent" icon-name="custom:custom1">
+        <div class="slds-m-around_medium">
+            <template if:true={isDisplay}>
+                <p>Event called by child Component</p>
+            </template>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={isUserData}>
+                <div><b>User Name : </b>{userData.name}</div>
+                <div><b>Password : </b>{userData.password}</div>
+                <div><b>City : </b>{userData.city}</div>
+                <div><b>Email : </b>{userData.email}</div>
+            </template>
+        </div>
+        <hr/>
+        <div class="slds-m-around_medium">
+            <c-child-component-example 
+                onsimpleevent={handleSimpleEvent} 
+                onremoveevent={handleRemove} 
+                ondataevent={handleChildData}
+            >
+            </c-child-component-example>
+        </div>
+    </lightning-card>
+</template>
