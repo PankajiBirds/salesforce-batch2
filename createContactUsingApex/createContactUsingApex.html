@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Create Contact" icon-name="custom:custom101">
+        <div class="slds-m-around_medium">
+            <div>
+                <lightning-input type="text" label="Enter First Name" value={contactData.FirstName} class="frmInput"></lightning-input>
+            </div>
+            <div>
+                <lightning-input type="text" label="Enter Last Name" value={contactData.LastName} class="frmInput" required></lightning-input>
+            </div>
+            <div>
+                <lightning-input type="email" label="Enter Email" value={contactData.Email} class="frmInput" ></lightning-input>
+            </div>
+            <div>
+                <lightning-input type="number" label="Enter Contact #" value={contactData.Phone} class="frmInput" ></lightning-input>
+            </div>
+            <div class="slds-m-top_large">
+                <lightning-button label="Submit" variant="brand" onclick={handleSubmitClick}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

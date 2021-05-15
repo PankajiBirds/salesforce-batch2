@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Parent to Child" icon-name="custom:custom91">
+        <div class="slds-m-around_medium">
+            <!-- Custom tag -->
+            <c-child-component user-data={childData}></c-child-component>
+            <hr/>
+            <c-child-component user-data={childData2}></c-child-component>            
+            <!-- <c-hello-world></c-hello-world> -->
+        </div>
+        <hr/>
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter Username" value={childData3.username} class="forInput"></lightning-input>
+            <lightning-input type="number" label="Enter User Id" value={childData3.userId} class="forInput"></lightning-input>
+            <lightning-button label="Submit" variant="brand" onclick={handleSubmit}></lightning-button>
+        </div>
+        <hr/>
+        <div class="slds-m-around_medium">
+            <c-child-component class="component3"></c-child-component>
+        </div>
+    </lightning-card>
+</template>
