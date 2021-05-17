@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Contact List" icon-name="custom:custom15">
+        <div class="slds-m-around_medium">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Account Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <template for:each={contacts} for:item="contact">
+                        <tr key={contact}>
+                            <td>{contact.fields.Name.value}</td>
+                            <td>{contact.fields.Account.displayValue}</td>
+                            <td>{contact.fields.Phone.value}</td>
+                            <!-- <td>{contact.fields.Email.value}</td>                             -->
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>
