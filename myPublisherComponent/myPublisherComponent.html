@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Publisher" icon-name="custom:custom71">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Publisher" variant="brand" onclick={handlePublisher}></lightning-button>
+            <span class="slds-m-left_large">
+                <lightning-button label="Subscribe" variant="destructive" onclick={handleSubscribe}></lightning-button>
+            </span>
+            <hr/>
+            <lightning-input type="text" label="Enter Username" class="forInput"></lightning-input>
+            <lightning-input type="email" label="Enter Email" class="forInput"></lightning-input>
+            <br/>
+            <lightning-button label="Send Detail" variant="success" onclick={handleSendDetail}></lightning-button>
+            <hr/>
+            <b>{shareData}</b>            
+        </div>
+    </lightning-card>
+</template>

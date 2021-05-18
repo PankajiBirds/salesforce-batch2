@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Subscribe Component" icon-name="custom:custom81">
+        <div class="slds-m-around_medium">
+            <b>{message}</b>
+            <hr/>
+            <b>Username : </b>{details.name}
+            <br/>
+            <b>Email : </b>{details.email}
+            <hr/>
+            <lightning-button label="Share" variant="brand" onclick={handleShare}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
